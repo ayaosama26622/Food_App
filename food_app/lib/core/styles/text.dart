@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 abstract class TextStyles {
   static const TextStyle headline = TextStyle(
     fontSize: 40,

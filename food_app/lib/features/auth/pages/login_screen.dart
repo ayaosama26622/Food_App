@@ -10,6 +10,7 @@ import 'package:food_app/core/widgets/password_from_field.dart';
 import 'package:food_app/core/function/validation.dart';
 import 'package:food_app/features/auth/pages/signup.dart';
 import 'package:food_app/features/auth/pages/number_screen.dart';
+import 'package:food_app/features/main/main_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -57,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           !isEmailValid(value)
                         )
                         {
-                          return' Please enter your email';
+                          return' Please enter a valid email';
                         }
                         return null;
                       }
@@ -83,7 +84,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       const SizedBox(height: 16,),
                       MainButton(text: 'Login', onPressed: () {
-                        if (formKey.currentState!.validate()){}
+                        if (formKey.currentState!.validate()){
+                          pushReplacement(context, MainScreen());
+                        }
                       }),
                       const SizedBox(height: 16,),
                       Row(
@@ -93,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             TextSpan(
                               children: [
                                 TextSpan(
-                                  text : 'Don\ ’t have an account?',
+                                  text : 'Don\’t have an account?',
                                   style: TextStyles.caption.copyWith(fontWeight: FontWeight.bold)
                                 ),
                                 WidgetSpan(

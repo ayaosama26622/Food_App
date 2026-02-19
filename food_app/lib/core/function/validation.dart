@@ -1,9 +1,9 @@
-bool isEmailValid(String email){
+bool isEmailValid(String email) {
   return RegExp(
-r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'
-)
-    .hasMatch(email);
-  }
+    r'^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
+  ).hasMatch(email.trim());
+}
+
 
 bool isEgyptianPhone(String number){
   return RegExp(

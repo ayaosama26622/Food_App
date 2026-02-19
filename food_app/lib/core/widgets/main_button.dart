@@ -7,9 +7,11 @@ class MainButton extends StatelessWidget {
     super.key,
     required this.onPressed,
     required this.text
+    
   });
   final String text;
   final Function() onPressed;
+  
 
   @override
   Widget build(BuildContext context) {

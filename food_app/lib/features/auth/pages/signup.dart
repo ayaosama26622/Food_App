@@ -23,7 +23,7 @@ class _SignupScreen extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body:
-         Center(
+          Center(
           child: Padding(
             padding: const EdgeInsets.all(16),
             child: Form(

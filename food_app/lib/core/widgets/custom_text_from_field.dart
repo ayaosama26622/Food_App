@@ -7,26 +7,39 @@ class CustomTextFromField extends StatelessWidget {
     this.hintText,
     this.keyboardType,
     this.validator,
+    this.prefixIcon,
+    this.readOnly =false,
+    this.onTap,
+    this.focusNode,
+    this.onChanged,
   });
   final String? hintText ;
   final TextInputType? keyboardType ;
   final String? Function(String?)? validator;
+  final Widget? prefixIcon;
+  final bool readOnly;
+  final Function()? onTap;
+  final FocusNode? focusNode;
+  final Function(String)? onChanged;
+
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       keyboardType: keyboardType,
+      readOnly: readOnly,
+      focusNode: focusNode,
       textInputAction: TextInputAction.next,
       onTapOutside: (event){
         FocusManager.instance.primaryFocus?.unfocus();
       },
       decoration: InputDecoration(
-        hintText: hintText,        
+        hintText: hintText,
+        prefixIcon : prefixIcon,        
         ),
         validator:validator,
-        onChanged: (value) {
-          
-        },
+        onChanged: (value) {},
+        onTap: onTap,
       );
   }
 }
