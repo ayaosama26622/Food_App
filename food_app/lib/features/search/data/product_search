@@ -1,0 +1,62 @@
+class ProductModel {
+  final String id;
+  final String name;
+  final double price;
+  final String weight;
+  final String image;
+  ProductModel({
+    required this.id,
+    required this.name,
+    required this.price,
+    required this.weight,
+    required this.image,
+  });
+}
+
+List<ProductModel> search =[
+  ProductModel(
+    id:'1',
+    name:'Diet Coke',
+    price: 1.99,
+    weight: '355ml',
+    image: 'assets/images/Diet Coke.png',
+    ),
+    ProductModel(
+    id:'1',
+    name:'Sprite Can',
+    price: 1.50,
+    weight: '355ml',
+    image:'assets/images/Sprite Can.png',
+    ),
+    ProductModel(
+    id:'1',
+    name:'Apple & Grape Juice',
+    price: 15.99,
+    weight: '2L',
+    image: 'assets/images/Grape.png' ,
+    ),
+    ProductModel(
+    id:'1',
+    name:'Orenge Juice',
+    price: 15.99,
+    weight: '2L',
+    image: 'assets/images/Orenge Juice.png',
+    ),
+    ProductModel(
+    id:'1',
+    name:'Coca Cola Can',
+    price: 4.99,
+    weight: '325ml',
+    image: 'assets/images/Coca Cola Can.png' ,
+    ),
+    ProductModel(
+    id:'1',
+    name:'Pepsi Can ',
+    price: 4.99,
+    weight: '330ml',
+    image: 'assets/images/Pepsi Can.png' ,
+    ),
+
+];
+
+  

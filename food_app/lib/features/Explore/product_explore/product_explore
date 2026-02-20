@@ -1,0 +1,63 @@
+import 'package:flutter/material.dart';
+import 'package:food_app/features/Beverages/page/beveragesScreen.dart';
+class CategoryModel {
+  final String title;
+  final String image;
+  final Color backgroundColor;
+  final Color borderColor;
+  final Widget page; 
+
+  CategoryModel({
+    required this.title,
+    required this.image,
+    required this.backgroundColor,
+    required this.borderColor,
+    required this.page,
+  });
+}
+
+List<CategoryModel> categories = [
+  CategoryModel(
+    title: "Fresh Fruits\n& Vegetable",
+    image: 'assets/images/Frash Fruits.png',
+    backgroundColor: const Color(0xffE8F5E9),
+    borderColor: const Color(0xff53B175),
+    page:  Beveragesscreen(), 
+  ),
+  CategoryModel(
+    title: "Cooking Oil\n& Ghee",
+    image: 'assets/images/Cooking Oil.png',
+    backgroundColor: const Color(0xffFDEBD0),
+    borderColor: const Color(0xffF39C12),
+    page:  Beveragesscreen(),
+  ),
+  CategoryModel(
+    title: "Meat & Fish",
+    image:'assets/images/Meat.png',
+    backgroundColor: const Color(0xffFDEDEC),
+    borderColor: const Color(0xffE74C3C),
+    page:  Beveragesscreen(),
+  ),
+  CategoryModel(
+    title: "Bakery & Snacks",
+    image: 'assets/images/Bakery.png',
+    backgroundColor: const Color(0xffF4ECF7),
+    borderColor: const Color(0xff9B59B6),
+    page:  Beveragesscreen(),
+  ),
+  CategoryModel(
+    title: "Dairy & Eggs",
+    image:'assets/images/Dairy.png',
+    backgroundColor: const Color(0xffFEF9E7),
+    borderColor: const Color(0xffF1C40F),
+    page:  Beveragesscreen(),
+  ),
+  CategoryModel(
+    title: "Beverages",
+    image: 'assets/images/Beverages.png',
+    backgroundColor: const Color(0xffEBF5FB),
+    borderColor: const Color(0xff3498DB),
+    page:  Beveragesscreen(),
+  ),
+];
+
