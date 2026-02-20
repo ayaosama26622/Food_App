@@ -15,7 +15,11 @@ class ButtonProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
+<<<<<<< HEAD
       color: const Color(0xFFF3F3F3),
+=======
+      color: const Color(0xFFF3F3F3), // رمادي فاتح زي الصورة
+>>>>>>> 017cbd8cfc57da98a817d281a4f95f05b87ea482
       borderRadius: BorderRadius.circular(20),
       child: InkWell(
         onTap: onPressed,

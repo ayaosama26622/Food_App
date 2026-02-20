@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:food_app/core/styles/colors.dart';
 import 'package:food_app/core/styles/text.dart';
 import 'package:food_app/core/widgets/main_button.dart';
+<<<<<<< HEAD
 import 'package:food_app/features/Checkout/page/checkout_screen.dart';
+=======
+>>>>>>> 017cbd8cfc57da98a817d281a4f95f05b87ea482
 import 'package:food_app/features/cart/data/product_cart.dart';
 import 'package:food_app/features/cart/widgets/item_cart.dart';
 
@@ -50,9 +53,13 @@ class _CartScreenState extends State<CartScreen> {
               padding: const EdgeInsets.all(16.0),
                 child: MainButton(
                 text: 'Go to Checkout',
+<<<<<<< HEAD
                 onPressed: () { 
                   CheckoutBottomSheet.show(context);
                 }
+=======
+                onPressed: () { }
+>>>>>>> 017cbd8cfc57da98a817d281a4f95f05b87ea482
     )
             )
     );

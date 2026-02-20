@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:food_app/core/constants/image_app.dart';
 import 'package:food_app/core/styles/colors.dart';
 import 'package:food_app/core/widgets/custom_svg_picture.dart';
+<<<<<<< HEAD
 import 'package:food_app/features/Explore/page/explore_screen.dart';
+=======
+>>>>>>> 017cbd8cfc57da98a817d281a4f95f05b87ea482
 import 'package:food_app/features/Favourite/page/favourite_screeen.dart';
 import 'package:food_app/features/account/page/account_screen.dart';
 import 'package:food_app/features/cart/page/cart_screen.dart';
@@ -19,7 +22,11 @@ class _MainScreenState extends State<MainScreen> {
   int currentIndex = 0;
   List<Widget> screen =[
     HomeScreen(),
+<<<<<<< HEAD
     ExploreScreen(),
+=======
+    Center(child: Text("Explore"),),
+>>>>>>> 017cbd8cfc57da98a817d281a4f95f05b87ea482
     CartScreen(),
     FavouriteScreeen(),
     AccountScreen(),

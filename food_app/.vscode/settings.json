@@ -1,7 +1,10 @@
 {
     "cmake.ignoreCMakeListsMissing": true,
     "cSpell.words": [
+<<<<<<< HEAD
         "Beveragesscreen",
+=======
+>>>>>>> 017cbd8cfc57da98a817d281a4f95f05b87ea482
         "trur"
     ],
     "editor.renderWhitespace": "none"

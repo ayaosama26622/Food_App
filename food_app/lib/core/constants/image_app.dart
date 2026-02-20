@@ -26,6 +26,7 @@ abstract class AppImage {
   static const String Ginger  = 'assets/images/Ginger.png';
   static const String sayed  = 'assets/images/sayed.png';
 
+<<<<<<< HEAD
   static const String Bakery  = 'assets/images/Bakery.png';
   static const String Beverages  = 'assets/images/Beverages.png';
   static const String CookingOil  = 'assets/images/Cooking Oil.png';
@@ -36,6 +37,8 @@ abstract class AppImage {
   static const String card  = 'assets/images/card.png';
 
 
+=======
+>>>>>>> 017cbd8cfc57da98a817d281a4f95f05b87ea482
 
 
 
